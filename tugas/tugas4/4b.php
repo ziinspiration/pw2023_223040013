@@ -17,16 +17,16 @@ array_push($alat, "Card Reader", "Modem");
     <h2>Macam-macam perangkat keras komputer</h2>
     <ol>
         <?php for ($i = 0; $i <= 5; $i++) { ?>
-            <li><?= $alat[$i] ?></li>
+        <li><?= $alat[$i] ?></li>
         <?php } ?>
     </ol>
-    <!-- // // // // // // // // -->
+    <!-- // // // // // // // // // -->
     <h2>Macam-macam perangkat keras komputer baru</h2>
     <ol>
         <?php
         sort($alat);
         for ($i = 0; $i < count($alat); $i++) { ?>
-            <li><?= $alat[$i]; ?></li>
+        <li><?= $alat[$i]; ?></li>
         <?php } ?>
     </ol>
 </body>
