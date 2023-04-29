@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(240, 240, 240) !important;
+  scroll-behavior: smooth;
+}
+
+/*  */
+
+.head {
+  color: white;
+  padding: 20px 5px;
+}
+
+.brand {
+  font-weight: 500;
+}
+
+.name-brand {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px;
+}
+
+.name-brand span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.head i {
+  font-size: 30px;
+  color: white;
+}

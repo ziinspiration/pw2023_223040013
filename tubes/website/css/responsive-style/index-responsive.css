@@ -1,0 +1,304 @@
+@media screen and (max-width: 990px) {
+  h1.welcome-head {
+    margin-top: 0px !important;
+  }
+
+  .search {
+    width: 100%;
+    margin-bottom: 40px !important;
+    margin-top: 20px;
+  }
+
+  .search {
+    background-color: rgba(0, 0, 255, 0.2);
+    box-shadow: 0 0 4px black;
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  .icon-user {
+    margin-left: 5px !important;
+  }
+
+  nav.nav-phone {
+    display: flex !important;
+    box-shadow: 0 0 2px grey;
+  }
+
+  .nav-before {
+    display: none;
+  }
+
+  .nav-item {
+    border-top: 4px solid whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 10px 0 0 0;
+    transition: 0.3s;
+    width: 60%;
+    margin-left: 0 !important;
+    text-shadow: 0 0 2px black;
+    transition: 1.5s;
+  }
+
+  .nav-item:hover {
+    opacity: 0.7;
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    padding-left: 20px;
+  }
+
+  .nav-item label {
+    display: flex !important;
+    color: white;
+    margin-left: 8px;
+    font-size: 20px;
+    margin-top: -1px;
+    font-family: arial;
+  }
+
+  .ziinspiration {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-style: italic;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-bottom: 0 !important;
+    margin-top: 40px !important;
+  }
+
+  .supported {
+    font-size: 14px;
+  }
+
+  .footer {
+    margin-bottom: 80px !important;
+    padding-top: 25px;
+  }
+
+  .promo-card {
+    margin-top: -30px;
+  }
+
+  .card-promo {
+    transform: scale(0.8);
+    min-width: 30%;
+  }
+
+  .button-card {
+    transform: scale(1);
+    margin-left: 0px;
+  }
+
+  .images-in {
+    transform: scale(0.9);
+    font-size: 23px;
+  }
+
+  .artikel-pages {
+    margin-top: 100px;
+  }
+
+  .artikel-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .artikel {
+    margin-bottom: 20px !important;
+  }
+
+  h1.images-text {
+    margin-bottom: 10px !important;
+  }
+
+  .promo-card::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .search {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+
+  .nav-link {
+    padding: 5px;
+  }
+  .nav-link i {
+    font-size: 18px !important;
+  }
+
+  .nav-link label {
+    font-size: 15px !important;
+  }
+
+  .icon-user {
+    margin-left: 5px !important;
+  }
+
+  nav.nav-phone {
+    display: flex !important;
+    box-shadow: 0 0 2px grey;
+  }
+
+  .welcome-page {
+    background-position-x: center;
+    text-shadow: 2px 2px 3px black !important;
+  }
+
+  .welcome-left-page {
+    font-size: 15px;
+  }
+
+  .profile-header {
+    display: none;
+  }
+
+  .icon-name {
+    display: block !important;
+  }
+
+  .ziinspiration {
+    font-size: 12px;
+  }
+
+  .footer {
+    margin-bottom: 80px !important;
+  }
+
+  .promo-card {
+    margin-top: -60px;
+    margin-left: -10px;
+  }
+
+  .card-promo {
+    transform: scale(0.7);
+    min-width: 40%;
+  }
+
+  .button-card {
+    transform: scale(1.5);
+    margin-left: 40px;
+  }
+}
+
+/* HANDPHONE */
+@media screen and (max-width: 500px) {
+  .search {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+
+  .nav-link {
+    padding: 5px;
+  }
+  .nav-link i {
+    font-size: 15px !important;
+  }
+
+  .nav-link label {
+    font-size: 13px !important;
+  }
+
+  .icon-user {
+    margin-left: 5px !important;
+  }
+
+  nav.nav-phone {
+    display: flex !important;
+    box-shadow: 0 0 2px grey;
+  }
+
+  .welcome-page {
+    background-position-x: center;
+    text-shadow: 2px 2px 3px black !important;
+  }
+
+  .welcome-left-page {
+    font-size: 15px;
+  }
+
+  .category-page {
+    margin-bottom: 15px !important;
+    margin-top: -20px;
+  }
+
+  .category-head h1 {
+    font-size: 16px !important;
+    margin-left: -20px;
+    margin-bottom: -5px;
+  }
+
+  .card-category p {
+    font-size: 10px;
+    font-weight: 550;
+    margin-top: 5px;
+  }
+
+  .carousel-first {
+    height: 80px;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+
+  .profile-header {
+    display: none;
+  }
+  .ziinspiration {
+    font-size: 11px;
+  }
+
+  .footer {
+    margin-bottom: 80px !important;
+  }
+
+  .promo-card {
+    margin-top: -90px;
+    margin-left: -60px;
+  }
+
+  .card-promo {
+    transform: scale(0.5);
+    min-width: 75%;
+    margin-right: -160px !important;
+  }
+
+  .button-card {
+    transform: scale(1.5);
+    margin-left: 70px;
+  }
+
+  .artikel {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form.search-dekstop {
+    width: 50% !important;
+    border-radius: 10px !important;
+    margin-left: -10px;
+  }
+
+  .card-promo {
+    margin-right: -125px !important;
+  }
+
+  .button-card {
+    transform: scale(1.4);
+    margin-left: 45px;
+  }
+}

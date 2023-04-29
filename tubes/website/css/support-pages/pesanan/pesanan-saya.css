@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(240, 240, 240) !important;
+  scroll-behavior: smooth;
+}
+
+/*  */
+
+.head {
+  color: white;
+  padding: 20px 5px;
+}
+
+.brand {
+  font-weight: 500;
+}
+
+.name-brand {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px;
+}
+
+.name-brand span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.head i {
+  font-size: 30px;
+  color: white;
+}
+
+.card-pesanan {
+  box-shadow: 2px 2px 4px grey;
+}
+
+.foto-barang img {
+  width: 150px;
+  box-shadow: 0 0 1px grey;
+}
+
+.status-pengiriman {
+  padding-top: 10px;
+}
+
+.head-status {
+  font-weight: 500;
+}
+
+.rincian {
+  margin-top: -10px;
+  margin-left: 10px;
+  margin-bottom: 10p;
+}
+
+.right-card {
+  padding: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+  .head i {
+    font-size: 20px;
+  }
+
+  .name-brand {
+    margin-top: 30px;
+  }
+
+  .left-card {
+    flex-direction: column;
+  }
+
+  .nama-barang {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .foto-barang img {
+    width: 100%;
+  }
+}

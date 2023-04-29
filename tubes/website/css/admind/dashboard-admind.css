@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(234, 234, 234);
+}
+
+/* HEADER & NAVBAR */
+
+.header-navbar-dekstop {
+  top: 0 !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  font-size: 35px !important;
+}
+
+.name-brand {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px;
+}
+
+.name-brand span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* HEADER & NAVBAR END */
+
+.container a {
+  text-decoration: none;
+}
+
+.card {
+  text-align: center;
+  padding: 10px 30px;
+  transition: 0.4s;
+  height: 200px;
+  font-size: 20px;
+  padding-top: 70px;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: scale(0.9);
+  transition: 0.4s;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 3px solid !important;
+}
+
+@media screen and (max-width: 900px) {
+  .top-pages {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 100px;
+    font-size: 16px;
+    padding-top: 25px;
+  }
+
+  .top-pages .card {
+    margin-bottom: 15px;
+  }
+
+  .bottom-pages {
+    margin-top: -1px !important;
+  }
+
+  .w-25 {
+    width: 100% !important;
+  }
+
+  .bottom-pages .card {
+    font-size: 15px !important;
+  }
+}

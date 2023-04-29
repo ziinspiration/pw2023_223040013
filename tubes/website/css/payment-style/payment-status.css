@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(240, 240, 240) !important;
+  scroll-behavior: smooth;
+}
+
+/*  */
+
+.back-button a {
+  color: black !important;
+  font-size: 30px;
+}
+
+.name-brand {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px;
+}
+
+.header h2 {
+  font-size: 40px !important;
+  font-weight: 700;
+}
+
+.name-brand span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.waiting-status {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.waiting-status p {
+  font-weight: 550;
+  font-size: 20px;
+}
+
+.waiting-status i {
+  font-size: 70px;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* success */
+
+.success-status {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.success-status p {
+  font-weight: 550;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.fa-check {
+  background-color: green;
+  padding: 25px;
+  font-size: 50px;
+  border-radius: 50%;
+  color: white;
+  animation: scale 2s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* Fail */
+
+.unsuccess-status {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.unsuccess-status p {
+  font-weight: 550;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.fa-xmark {
+  background-color: red;
+  padding: 25px;
+  font-size: 50px;
+  border-radius: 50%;
+  color: white;
+  animation: scale-x 2s ease-in-out infinite alternate;
+}
+
+@keyframes scale-x {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+  .name-brand {
+    margin-top: 30px;
+  }
+
+  .header h2 {
+    font-size: 30px !important;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 750px) {
+}
+
+@media screen and (max-width: 900px) {
+}
