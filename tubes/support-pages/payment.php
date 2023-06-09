@@ -76,49 +76,49 @@ if (isset($_POST['bayar'])) {
     <link rel="icon" href="../assets/img/logo-halodek/halodek-logo.png" />
     <title>Form Pembayaran</title>
     <style>
-        body {
-            background-color: rgb(234, 234, 234);
-        }
+    body {
+        background-color: rgb(234, 234, 234);
+    }
 
-        .preview-image {
-            max-width: 200px;
-            max-height: 200px;
-            margin-top: 20px;
-            display: none;
-            border: 1px solid grey;
-            border-radius: 2px;
-        }
+    .preview-image {
+        max-width: 200px;
+        max-height: 200px;
+        margin-top: 20px;
+        display: none;
+        border: 1px solid grey;
+        border-radius: 2px;
+    }
 
-        .bg {
-            background-color: Gainsboro;
-            box-shadow: 0 0 6px black;
-            border-radius: 15px;
-            margin-bottom: 70px !important;
-        }
+    .bg {
+        background-color: Gainsboro;
+        box-shadow: 0 0 6px black;
+        border-radius: 15px;
+        margin-bottom: 70px !important;
+    }
 
-        .header-navbar-dekstop {
-            top: 0 !important;
-        }
+    .header-navbar-dekstop {
+        top: 0 !important;
+    }
 
-        .navbar-brand {
-            color: white !important;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-                "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-            font-size: 35px !important;
-        }
+    .navbar-brand {
+        color: white !important;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+        font-size: 35px !important;
+    }
 
-        .name-brand {
-            font-size: 20px;
-            font-weight: 500;
-            margin: 50px;
-        }
+    .name-brand {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 50px;
+    }
 
-        .name-brand span {
-            font-size: 12px;
-            font-weight: 600;
-        }
+    .name-brand span {
+        font-size: 12px;
+        font-weight: 600;
+    }
 
-        /* HEADER & NAVBAR END */
+    /* HEADER & NAVBAR END */
     </style>
 </head>
 
@@ -147,22 +147,29 @@ if (isset($_POST['bayar'])) {
                 <form class="bg p-5" action="" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="nama_rekening">Nama Rekening</label>
-                        <input type="text" class="form-control" name="nama_rekening" id="nama_rekening" placeholder="Masukkan nama pemilik rekening" required>
+                        <input type="text" class="form-control" name="nama_rekening" id="nama_rekening"
+                            placeholder="Masukkan nama pemilik rekening" required>
                     </div>
                     <div class="form-group">
                         <label for="nomor_rekening">Nomor Rekening</label>
-                        <input type="text" class="form-control" name="nomor_rekening" id="nomor_rekening" placeholder="Masukkan nomor rekening" required>
+                        <input type="text" class="form-control" name="nomor_rekening" id="nomor_rekening"
+                            placeholder="Masukkan nomor rekening" required>
                     </div>
                     <div class="form-group">
                         <label for="bukti_transfer">Bukti Transfer</label>
-                        <input type="file" class="form-control-file bg-light p-1 rounded" name="bukti_transfer" id="bukti_transfer" accept="image/*" onchange="previewImage(event)">
+                        <input type="file" class="form-control-file bg-light p-1 rounded" name="bukti_transfer"
+                            id="bukti_transfer" accept="image/*" onchange="previewImage(event)">
                         <img src="" alt="Preview" id="preview" class="preview-image">
                     </div>
                     <div class="form-group">
-                        <input type="hidden" class="form-control-file" name="jumlah_harga" id="jumlah_harga" value="<?= $totalHarga; ?>.000">
-                        <input type="hidden" class="form-control-file" name="keranjang_id" id="keranjang_id" value="<?= $id; ?>">
-                        <input type="hidden" class="form-control-file" name="barang_id" id="barang_id" value="<?= $idBarang; ?>">
-                        <input type="hidden" class="form-control-file" name="user_id" id="user_id" value="<?= $idPembeli; ?>">
+                        <input type="hidden" class="form-control-file" name="jumlah_harga" id="jumlah_harga"
+                            value="<?= $totalHarga; ?>.000">
+                        <input type="hidden" class="form-control-file" name="keranjang_id" id="keranjang_id"
+                            value="<?= $id; ?>">
+                        <input type="hidden" class="form-control-file" name="barang_id" id="barang_id"
+                            value="<?= $idBarang; ?>">
+                        <input type="hidden" class="form-control-file" name="user_id" id="user_id"
+                            value="<?= $idPembeli; ?>">
                     </div>
                     <div class="mt-5">
                         <button type="submit" name="bayar" class="btn btn-primary">Kirim</button>
@@ -176,15 +183,15 @@ if (isset($_POST['bayar'])) {
     <script src="https://kit.fontawesome.com/59f11d8874.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        function previewImage(event) {
-            var reader = new FileReader();
-            reader.onload = function() {
-                var output = document.getElementById('preview');
-                output.src = reader.result;
-                output.style.display = 'block'; // Tampilkan gambar pratinjau
-            }
-            reader.readAsDataURL(event.target.files[0]);
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('preview');
+            output.src = reader.result;
+            output.style.display = 'block'; // Tampilkan gambar pratinjau
         }
+        reader.readAsDataURL(event.target.files[0]);
+    }
     </script>
 </body>
 

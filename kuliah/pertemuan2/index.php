@@ -42,7 +42,6 @@ $nama = "Ilham ramadhana"
     <p3>
         <?php echo ' Hari Jum\'at Kita Ujian" '; ?>
     </p3>
-    <!-- \ untuk digunakan ketika ada tanda petik di dalam -->
 </body>
 
 </html
